@@ -10,6 +10,8 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { HttpClientModule } from '@angular/common/http';
 import { ArticlesTechnologyComponent } from './articles-technology/articles-technology.component';
 import { ArticlesJavascriptComponent } from './articles-javascript/articles-javascript.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ArticlesJavascriptComponent } from './articles-javascript/articles-java
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
