@@ -9,12 +9,14 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatCardModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticlesTechnologyComponent } from './articles-technology/articles-technology.component';
+import { ArticlesJavascriptComponent } from './articles-javascript/articles-javascript.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ArticlesTechnologyComponent
+    ArticlesTechnologyComponent,
+    ArticlesJavascriptComponent
   ],
   imports: [
     BrowserModule,
