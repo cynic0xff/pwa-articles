@@ -8,11 +8,13 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { HttpClientModule } from '@angular/common/http';
+import { ArticlesTechnologyComponent } from './articles-technology/articles-technology.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    ArticlesTechnologyComponent
   ],
   imports: [
     BrowserModule,
